@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0000000000000000001000 /* NetScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002000 /* NetScanApp.swift */; };
+		BB0000000000000000001001 /* NetworkDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002001 /* NetworkDevice.swift */; };
+		BB0000000000000000001002 /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002002 /* NetworkInterface.swift */; };
+		BB0000000000000000001003 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002003 /* NetworkUtils.swift */; };
+		BB0000000000000000001004 /* InterfaceScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002004 /* InterfaceScanner.swift */; };
+		BB0000000000000000001005 /* NetworkScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002005 /* NetworkScanner.swift */; };
+		BB0000000000000000001006 /* PingScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002006 /* PingScanner.swift */; };
+		BB0000000000000000001007 /* ArpResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002007 /* ArpResolver.swift */; };
+		BB0000000000000000001008 /* HostnameResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002008 /* HostnameResolver.swift */; };
+		BB0000000000000000001009 /* PortScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002009 /* PortScanner.swift */; };
+		BB000000000000000000100B /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000200B /* ScanViewModel.swift */; };
+		BB000000000000000000100C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000200C /* ContentView.swift */; };
+		BB000000000000000000100D /* DeviceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000200D /* DeviceTableView.swift */; };
+		BB000000000000000000100E /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000200E /* DeviceDetailView.swift */; };
+		BB000000000000000000100F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000200F /* PreferencesView.swift */; };
+		BB0000000000000000001010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002010 /* Assets.xcassets */; };
+		BB0000000000000000001020 /* NDPResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002020 /* NDPResolver.swift */; };
+		BB0000000000000000001021 /* DeviceTypeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002021 /* DeviceTypeDetector.swift */; };
+		BB0000000000000000001022 /* HttpBannerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002022 /* HttpBannerScanner.swift */; };
+		BB0000000000000000001023 /* SSDPScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002023 /* SSDPScanner.swift */; };
+		BB0000000000000000001024 /* BonjourScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002024 /* BonjourScanner.swift */; };
+		BB0000000000000000001025 /* MACVendorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002025 /* MACVendorResolver.swift */; };
+		BB0000000000000000001026 /* UpstreamDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000002026 /* UpstreamDiscovery.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0000000000000000002000 /* NetScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetScanApp.swift; sourceTree = "<group>"; };
+		BB0000000000000000002001 /* NetworkDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDevice.swift; sourceTree = "<group>"; };
+		BB0000000000000000002002 /* NetworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		BB0000000000000000002003 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		BB0000000000000000002004 /* InterfaceScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002005 /* NetworkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002006 /* PingScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002007 /* ArpResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArpResolver.swift; sourceTree = "<group>"; };
+		BB0000000000000000002008 /* HostnameResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostnameResolver.swift; sourceTree = "<group>"; };
+		BB0000000000000000002009 /* PortScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortScanner.swift; sourceTree = "<group>"; };
+		BB000000000000000000200B /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		BB000000000000000000200C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB000000000000000000200D /* DeviceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableView.swift; sourceTree = "<group>"; };
+		BB000000000000000000200E /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		BB000000000000000000200F /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		BB0000000000000000002010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0000000000000000002020 /* NDPResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDPResolver.swift; sourceTree = "<group>"; };
+		BB0000000000000000002021 /* DeviceTypeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTypeDetector.swift; sourceTree = "<group>"; };
+		BB0000000000000000002022 /* HttpBannerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBannerScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002023 /* SSDPScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDPScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002024 /* BonjourScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourScanner.swift; sourceTree = "<group>"; };
+		BB0000000000000000002025 /* MACVendorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACVendorResolver.swift; sourceTree = "<group>"; };
+		BB0000000000000000002026 /* UpstreamDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstreamDiscovery.swift; sourceTree = "<group>"; };
+		BB0000000000000000002011 /* NetScan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetScan-Info.plist"; sourceTree = "<group>"; };
+		BB0000000000000000002012 /* NetScan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NetScan.entitlements"; sourceTree = "<group>"; };
+		BB0000000000000000003001 /* NetScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NetScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BB0000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000006 /* Sources */,
+				BB0000000000000000002011 /* NetScan-Info.plist */,
+				BB0000000000000000002012 /* NetScan.entitlements */,
+				BB000000000000000000000A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB0000000000000000000006 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000007 /* NetScan */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BB0000000000000000000007 /* NetScan */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000008 /* App */,
+				BB0000000000000000000009 /* Models */,
+				BB000000000000000000000B /* Services */,
+				BB000000000000000000000C /* ViewModels */,
+				BB000000000000000000000D /* Views */,
+				BB000000000000000000000E /* Resources */,
+			);
+			path = NetScan;
+			sourceTree = "<group>";
+		};
+		BB0000000000000000000008 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000002000 /* NetScanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BB0000000000000000000009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000002001 /* NetworkDevice.swift */,
+				BB0000000000000000002002 /* NetworkInterface.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB000000000000000000000B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000002003 /* NetworkUtils.swift */,
+				BB0000000000000000002004 /* InterfaceScanner.swift */,
+				BB0000000000000000002005 /* NetworkScanner.swift */,
+				BB0000000000000000002006 /* PingScanner.swift */,
+				BB0000000000000000002007 /* ArpResolver.swift */,
+				BB0000000000000000002008 /* HostnameResolver.swift */,
+				BB0000000000000000002009 /* PortScanner.swift */,
+				BB0000000000000000002020 /* NDPResolver.swift */,
+				BB0000000000000000002021 /* DeviceTypeDetector.swift */,
+				BB0000000000000000002022 /* HttpBannerScanner.swift */,
+				BB0000000000000000002023 /* SSDPScanner.swift */,
+				BB0000000000000000002024 /* BonjourScanner.swift */,
+				BB0000000000000000002025 /* MACVendorResolver.swift */,
+				BB0000000000000000002026 /* UpstreamDiscovery.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB000000000000000000000C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB000000000000000000200B /* ScanViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB000000000000000000000D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB000000000000000000200C /* ContentView.swift */,
+				BB000000000000000000200D /* DeviceTableView.swift */,
+				BB000000000000000000200E /* DeviceDetailView.swift */,
+				BB000000000000000000200F /* PreferencesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB000000000000000000000E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000002010 /* Assets.xcassets */,
+			);
+			path = "Resources";
+			sourceTree = "<group>";
+		};
+		BB000000000000000000000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000003001 /* NetScan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0000000000000000000101 /* NetScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0000000000000000000107 /* Build configuration list for PBXNativeTarget "NetScan" */;
+			buildPhases = (
+				BB0000000000000000000103 /* Sources */,
+				BB0000000000000000000104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetScan;
+			productName = NetScan;
+			productReference = BB0000000000000000003001 /* NetScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastSwiftMigration = 1600;
+				TargetAttributes = {
+					BB0000000000000000000101 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BB0000000000000000000002 /* Build configuration list for PBXProject "NetScan" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB0000000000000000000005;
+			productRefGroup = BB000000000000000000000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0000000000000000000101 /* NetScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0000000000000000000104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0000000000000000001010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0000000000000000000103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0000000000000000001000 /* NetScanApp.swift in Sources */,
+				BB0000000000000000001001 /* NetworkDevice.swift in Sources */,
+				BB0000000000000000001002 /* NetworkInterface.swift in Sources */,
+				BB0000000000000000001003 /* NetworkUtils.swift in Sources */,
+				BB0000000000000000001004 /* InterfaceScanner.swift in Sources */,
+				BB0000000000000000001005 /* NetworkScanner.swift in Sources */,
+				BB0000000000000000001006 /* PingScanner.swift in Sources */,
+				BB0000000000000000001007 /* ArpResolver.swift in Sources */,
+				BB0000000000000000001008 /* HostnameResolver.swift in Sources */,
+				BB0000000000000000001009 /* PortScanner.swift in Sources */,
+				BB000000000000000000100B /* ScanViewModel.swift in Sources */,
+				BB000000000000000000100C /* ContentView.swift in Sources */,
+				BB000000000000000000100D /* DeviceTableView.swift in Sources */,
+				BB000000000000000000100E /* DeviceDetailView.swift in Sources */,
+				BB000000000000000000100F /* PreferencesView.swift in Sources */,
+			BB0000000000000000001020 /* NDPResolver.swift in Sources */,
+			BB0000000000000000001021 /* DeviceTypeDetector.swift in Sources */,
+			BB0000000000000000001022 /* HttpBannerScanner.swift in Sources */,
+			BB0000000000000000001023 /* SSDPScanner.swift in Sources */,
+			BB0000000000000000001024 /* BonjourScanner.swift in Sources */,
+			BB0000000000000000001025 /* MACVendorResolver.swift in Sources */,
+				BB0000000000000000001026 /* UpstreamDiscovery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Debug;
+		};
+		BB0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+			};
+			name = Release;
+		};
+		BB0000000000000000000108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NetScan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				INFOPLIST_FILE = "NetScan-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asimov.NetScan;
+				PRODUCT_NAME = NetScan;
+				SWIFT_VERSION = 5.9;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+			};
+			name = Debug;
+		};
+		BB0000000000000000000109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NetScan.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				INFOPLIST_FILE = "NetScan-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asimov.NetScan;
+				PRODUCT_NAME = NetScan;
+				SWIFT_VERSION = 5.9;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+				ENABLE_HARDENED_RUNTIME = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0000000000000000000002 /* Build configuration list for PBXProject "NetScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0000000000000000000003 /* Debug */,
+				BB0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB0000000000000000000107 /* Build configuration list for PBXNativeTarget "NetScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0000000000000000000108 /* Debug */,
+				BB0000000000000000000109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB0000000000000000000001 /* Project object */;
+}

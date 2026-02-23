@@ -1,0 +1,74 @@
+name: Build and Release DMG
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggered when a tag starting with 'v' is pushed (e.g., v1.0.1)
+
+jobs:
+  release:
+    name: Build and Release
+    runs-on: macos-15
+    # Do not run if [skip release] is included in the commit message
+    if: "!contains(github.event.head_commit.message, '[skip release]')"
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "DMG_NAME=NetScan-$VERSION.dmg" >> $GITHUB_ENV
+
+      - name: Set up Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.app
+
+      - name: Build App
+        run: |
+          xcodebuild -project NetScan.xcodeproj \
+                     -scheme NetScan-Release \
+                     -configuration Release \
+                     -derivedDataPath ./build \
+                     clean build \
+                     CODE_SIGNING_ALLOWED=YES \
+                     CODE_SIGNING_REQUIRED=NO \
+                     CODE_SIGN_IDENTITY="-" \
+                     AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Locate built app
+        run: |
+          APP_PATH=$(find ./build/Build/Products/Release -name "NetScan.app" -type d | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "Error: Could not find NetScan.app"
+            exit 1
+          fi
+          echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
+
+      - name: Install create-dmg
+        run: brew install create-dmg
+
+      - name: Create DMG
+        run: |
+          rm -f "${{ env.DMG_NAME }}"
+          create-dmg \
+            --volname "NetScan ${{ env.VERSION }}" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "NetScan.app" 175 190 \
+            --hide-extension "NetScan.app" \
+            --app-drop-link 425 190 \
+            "${{ env.DMG_NAME }}" \
+            "${{ env.APP_PATH }}"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.DMG_NAME }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

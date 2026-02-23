@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Network client access for scanning -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <!-- Hardened runtime: allow unsigned executable memory for dynamic code (not required but good practice) -->
+    <!-- No app sandbox: required for running subprocess ping/arp commands -->
+</dict>
+</plist>
